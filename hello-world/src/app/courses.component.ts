@@ -3,21 +3,11 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'courses',
     template: `
-       {{ course.title | uppercase }} <br/>
-       {{ course.doneBy }} <br/>
-       {{ course.duration | number}} <br/>
-       {{ course.hoursNeeded | number:'2.1-2'}} <br/>
-       {{ course.price | currency:'INR'}} <br/>
-       {{ course.date | date:'shortDate'}} <br/>
+       {{ text | summary:50}}
     `
 })
 export class CoursesComponent{
-    course = {
-        title: "The Basics of Angular",
-        doneBy: "Tirtho",
-        duration: 300000,
-        hoursNeeded: 40.2,
-        price: 100.22,
-        date: new Date(2022, 11, 7)
-    }
+    text = `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quae pariatur, inventore laudantium minima in? Aperiam odit facilis rerum ipsam, eligendi facere amet accusamus doloribus, nam, iusto ut expedita laboriosam.
+    `
 }
