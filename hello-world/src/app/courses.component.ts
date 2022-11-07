@@ -1,14 +1,18 @@
 import { Component } from "@angular/core";
-import { CoursesService } from "./course/courses.service";
 
 @Component({
     selector: 'courses',
     template: `
-        <button (click)="onSave($event)">Save</button>
+        <div (click)="onDivClicked()">
+            <button (click)="onSave($event)">Save</button>
+        </div>
     `
 })
 export class CoursesComponent{
     isActive = true;
+    onDivClicked(){
+        console.log("Div was clicked");
+    }
     onSave($event: any) {
         console.log("Button was clicked", $event);
     }
