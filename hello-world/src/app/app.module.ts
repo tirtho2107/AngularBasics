@@ -8,13 +8,15 @@ import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './course/courses.service';
 import { SummaryPipe } from './summary.pipe';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    SummaryPipe
+    SummaryPipe,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
